@@ -1,0 +1,2 @@
+# smart_lock_mini_program
+智能门锁控制端小程序，实现蓝牙验证和互联网开锁
