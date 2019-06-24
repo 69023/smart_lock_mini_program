@@ -1,0 +1,36 @@
+<!--pages/control/control.wxml-->
+<view class='head'>
+  <view class="head-icon">
+    <image src='/assets/images/icon-warning.png'></image>
+  </view>
+</view>
+
+<view class='options-group'>
+  <view class='option-item'>
+    <picker bindchange="bindPickerChange" value="{{pickerIndex}}" range="{{lock_remarks}}">
+      <view class="picker">门室选择：{{lock_remarks[pickerIndex]}}</view>
+    </picker>
+  </view>
+</view>
+
+<view bindtap="bindViewTap" class="remote-open-lock-btn" bindtap="showDialogBtn">远程开锁</view>
+
+<view class='wraning-group'>
+  <view class='wraning-title'>提示 :</view>
+  <view class='wraning-text'>在您进行远程操作之前 , 请您务必熟知远程开锁的严肃性 ; 请您务必确保门室旁有可靠人员 .</view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">验证密码</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <input placeholder-class="input-holder" type="password" bindinput="inputChangePassword" class="input" placeholder="请输入密码进行验证"></input>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">开锁</view>
+  </view>
+</view>

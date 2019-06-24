@@ -1,0 +1,46 @@
+/**app.wxss**/
+@import 'weui.wxss';
+
+.options-group {
+  height: 100%;
+  max-width: 100%;
+  margin: 48rpx 30rpx 0 30rpx;
+  /* background: gray; */
+}
+
+.options-group .option-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  padding: 0rpx 30rpx;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+  -webkit-box-shadow: 0rpx 6rpx 6rpx #c8c8c8;
+  -moz-box-shadow: 0rpx 6rpx 6rpx #c8c8c8;
+  box-shadow: 0rpx 6rpx 6rpx #c8c8c8;
+}
+
+.option-item {
+  position: relative;
+}
+
+.option-item .option-item-icon {
+  width: 60rpx;
+  margin: 6rpx;
+}
+
+.option-item .option-item-icon image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 16rpx;
+}
+
+.option-item .option-item-title {
+  margin-left: 20rpx;
+}
+
+.option-item .option-item-other {
+  position: absolute;
+  right: 80rpx;
+  color: grey;
+}

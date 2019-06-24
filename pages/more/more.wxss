@@ -1,0 +1,6 @@
+/* pages/more.wxss */
+.bottom-line-text{
+  color: gray;
+  font-size: 24rpx;
+  text-align: center;
+}

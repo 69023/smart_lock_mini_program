@@ -1,0 +1,29 @@
+<!--pages/user/pages/info/modify/modify.wxml-->
+<w-notice mode="closeable" text="个人信息一旦设置不可修改 , 尽快完善个人信息以便管理员授权 ." bindclose="noticeClose" speed="30" />
+
+<view class='options-group'>
+  <view class='option-item'>
+    <view class=''>姓名:</view>
+    <view class='input-group'>
+      <input disabled='{{is_exist?true:false}}' bindinput='userName' value='{{userName}}' class='input-group' placeholder='输入您的姓名'></input>
+    </view>
+  </view>
+
+  <view class='option-item'>
+    <view class=''>班级:</view>
+    <view class='input-group'>
+      <input disabled='{{is_exist?true:false}}' class='input-group' bindinput='userClass' value='{{userClass}}' placeholder='输入您的班级'></input>
+    </view>
+  </view>
+
+  <view class='option-item'>
+    <view class=''>学号:</view>
+    <view class='input-group'>
+      <input disabled='{{is_exist?true:false}}' bindinput='userID' type='number' value='{{userID}}' class='input-group' placeholder='输入您的学号'></input>
+    </view>
+  </view>
+
+</view>
+
+<view wx:if="{{ !is_exist }}" bindtap='modify_user_info_event' class="save-info-btn">保存信息</view>
+<view wx:if="{{ is_exist }}" class="no-info-btn">个人信息设置后不可更改</view>

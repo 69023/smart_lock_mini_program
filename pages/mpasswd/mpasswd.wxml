@@ -1,0 +1,25 @@
+<view class='options-group'>
+
+  <view class='option-item'>
+    <view class=''>旧的密码:</view>
+    <view class='input-group'>
+      <input bindinput='userOldPassword' type='password' class='input-group' placeholder='输入原密码'></input>
+    </view>
+  </view>
+
+  <view class='option-item'>
+    <view class=''>新的密码:</view>
+    <view class='input-group'>
+      <input bindinput='userNewPassword1' type='password' class='input-group' placeholder='输入新密码'></input>
+    </view>
+  </view>
+
+    <view class='option-item'>
+    <view class=''>再次确定:</view>
+    <view class='input-group'>
+      <input bindinput='userNewPassword2' type='password' class='input-group' placeholder='再次输入新密码'></input>
+    </view>
+  </view>
+</view>
+
+<view bindtap='modifyPassword' class="save-info-btn">确定修改</view>

@@ -1,0 +1,150 @@
+/* pages/control/control.wxss */
+
+.head {
+    height: 400rpx;
+    width: 100%;
+    background: linear-gradient(345deg, #fff 50%, #25aae3 50%);
+    position: relative;
+  }
+  
+  .head-icon {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 10rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2.5rem;
+    margin-left: -2.5rem;
+    background-color: #fff;
+    border: 4rpx solid #fff;
+    border-radius: 50%;
+  }
+  
+  .head-icon image {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+  }
+  
+  picker {
+    width: 100%; /* 最大面积处理点击事件 */
+  }
+  
+  .remote-open-lock-btn {
+    font-size: 42rpx;
+    color: #fff;
+    background: #25aae3;
+    width: 480rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    border-radius: 168rpx;
+    margin: 120rpx auto 0;
+    box-shadow: 4rpx 4rpx 10rpx #a6a5ad;
+  }
+  
+  .wraning-group {
+    margin: 60rpx 30rpx 0 30rpx;
+  }
+  
+  .wraning-group .wraning-title {
+    padding-left: 10rpx;
+    border-left: 8rpx solid #25aae3;
+  }
+  
+  .wraning-group .wraning-text {
+    text-indent: 2rem;
+    margin: 10rpx 0;
+  }
+  
+  /* 弹窗 */
+  
+  .show-btn {
+    margin-top: 100rpx;
+    color: #2c2;
+  }
+  
+  .modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+  }
+  
+  .modal-dialog {
+    width: 540rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    background: #f9f9f9;
+    margin: -180rpx 105rpx;
+    border-radius: 16rpx;
+  }
+  
+  .modal-title {
+    padding-top: 50rpx;
+    font-size: 36rpx;
+    color: #030303;
+    text-align: center;
+  }
+  
+  .modal-content {
+    padding: 50rpx 32rpx;
+  }
+  
+  .modal-input {
+    display: flex;
+    background: #fff;
+    border: 2rpx solid #ddd;
+    font-size: 28rpx;
+    border-radius: 10rpx;
+  }
+  
+  .input {
+    width: 100%;
+    height: 82rpx;
+    font-size: 28rpx;
+    line-height: 28rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  input-holder {
+    color: #666;
+    font-size: 28rpx;
+  }
+  
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    height: 86rpx;
+    border-top: 1px solid #dedede;
+    font-size: 34rpx;
+    line-height: 86rpx;
+  }
+  
+  .btn-cancel {
+    width: 50%;
+    color: #666;
+    text-align: center;
+    border-right: 1px solid #dedede;
+  }
+  
+  .btn-confirm {
+    width: 50%;
+    color: #25aae3;
+    text-align: center;
+  }
+  

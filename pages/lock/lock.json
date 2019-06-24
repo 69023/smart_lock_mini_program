@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "form-btn": "/dist/form-btn/form-btn"
+  },
+  "navigationBarTitleText": "机械锁"
+}

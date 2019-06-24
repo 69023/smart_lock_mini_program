@@ -1,0 +1,15 @@
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange'></text> 开门准备
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-green shadow' bindtap='numSteps'>下一步</button>
+  </view>
+</view>
+<view class='bg-white padding'>
+  <view class='cu-steps'>
+    <view class='cu-item {{index>num?"":"text-blue"}}' wx:for="{{numList}}" wx:key>
+      <text class='num {{index==2?"err":""}}' data-index='{{index + 1}}'></text> {{item.name}}
+    </view>
+  </view>
+</view>

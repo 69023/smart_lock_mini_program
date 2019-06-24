@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-notice": "/dist/w-notice/index"
+  },
+  "navigationBarTitleText": "个人中心"
+}

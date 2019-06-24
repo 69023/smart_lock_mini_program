@@ -1,0 +1,26 @@
+.avatar-group {
+  height: 240rpx;
+  width: 100%;
+  padding: 64rpx 0;
+}
+
+.avatar-group .avatar {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 0 auto;
+}
+
+.avatar-group .avatar image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10rpx solid #fff;
+  box-shadow: 6rpx 6rpx 20px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-group .nick-name {
+  margin: 60rpx 0 0 24rpx;
+  text-align: center;
+  font-weight: 800;
+  text-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.2);
+}

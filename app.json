@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/lock/lock",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/more/more",
+    "pages/control/control",
+    "pages/mpasswd/mpasswd",
+    "pages/scan/scan",
+    "pages/modify/modify"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "门锁管理",
+    "navigationBarTextStyle":"black"
+  }
+}

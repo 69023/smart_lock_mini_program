@@ -1,0 +1,33 @@
+/* pages/user/pages/logs/logs.wxss */
+
+.page {
+  font-size: 24rpx;
+  color: #333;
+  margin: 20rpx;
+}
+
+.table {
+  border: 2rpx solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  max-width: 100%;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.th, .td {
+  padding: 20rpx;
+  border-bottom: 2rpx solid #dadada;
+  border-right: 2rpx solid #dadada;
+  text-align: center;
+  width: 100%;
+}
+
+.th {
+  font-weight: 800;
+  /* background-color: #dadada; */
+}

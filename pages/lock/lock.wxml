@@ -1,0 +1,13 @@
+<!--pages/lock/lock.wxml-->
+<view>
+  <image class="indexImage" src="/pages/lock/image/img01@2x.png" style="height: {{imageHeight}}px"></image>
+  <image class="indexImage2" src="/pages/lock/image/img03@2x.png" style="height: {{imageHeight1}}px;top: {{differHeight}}px"></image>
+  <view class="indexTitle">机械门锁的智能控制</view>
+  <view class="indexTitle">仅为已经授权用户扫码开门</view>
+  <view class="indexTitle">如需授权请联系管理员</view>
+  <navigator class="indexIntroduce" hoverClass="none" url="/pages/codeIntroduce/codeIntroduce">普通用户暂时无法使用扫码开锁</navigator>
+  <view bindtap="scan_b_event" class="indexButton">验证开门</view>
+  <view bindtap='user_center_event'>
+    <image class='round-click' src='/pages/lock/image/personal_center.png'> </image>
+  </view>
+</view>

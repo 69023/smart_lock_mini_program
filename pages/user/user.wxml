@@ -1,0 +1,51 @@
+<!-- 提示开始 -->
+<w-notice wx:if="{{ user_info.name==null }}" mode="closeable" text="请完善个人信息，否者无法授权开锁" bindclose="noticeClose" speed="30" />
+<!-- 提示结束 -->
+
+<!-- 昵称和头像开始 -->
+<view class='avatar-group'>
+  <view class='avatar'>
+    <image src='{{user_info.avatarUrl ? user_info.avatarUrl:"/pages/user/image/user_icon.png"}}'></image>
+  </view>
+  <view class='nick-name text-shadow' wx:if="{{user_info.nickName}}">{{user_info.nickName}}</view>
+</view>
+<!-- 昵称和头像结束 -->
+
+<!-- 菜单选项开始 -->
+<view class='options-group'>
+  <view bindtap='modify_info_event' class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon_user_info.png'></image>
+    </view>
+    <view class='option-item-title'>个人中心</view>
+    <view class='option-item-other'>
+    </view>
+  </view>
+  <view class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon_permission.png'></image>
+    </view>
+    <view class='option-item-title'>当前权限</view>
+    <view class='option-item-other'>
+      <view wx:if="{{ user_info.permission==1 }}">普通用户</view>
+        <view wx:if="{{ user_info.permission==3 }}">管理员</view>
+        <view wx:if="{{ user_info.permission==15 }}">超级管理员</view>
+        <view wx:if="{{ user_info.permission==255 }}">开发者</view>
+    </view>
+  </view>
+  <view bindtap='logs_event' class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon_logs.png'></image>
+    </view>
+    <view class='option-item-title'>开锁记录</view>
+    <view class='option-item-other'></view>
+  </view>
+  <view bindtap='open_more_event' class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon_more.png'></image>
+    </view>
+    <view class='option-item-title'>更多内容</view>
+    <view class='option-item-other'></view>
+  </view>
+</view>
+<!-- 菜单选项结束 -->

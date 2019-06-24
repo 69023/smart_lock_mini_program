@@ -1,0 +1,42 @@
+<!--pages/more/more.wxml-->
+<!-- 菜单选项开始 -->
+<view class='options-group'>
+
+  <view wx:if="{{user_per!=1}}" bindtap='modify_password_event' class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon-password.png'></image>
+    </view>
+    <view class='option-item-title'>修改密码</view>
+    <view class='option-item-other'>
+    </view>
+  </view>
+
+  <view wx:if="{{user_per!=1}}" bindtap='remote_control_event' class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon_remote_control.png'></image>
+    </view>
+    <view class='option-item-title'>远程开锁</view>
+    <view class='option-item-other'>
+    </view>
+  </view>
+
+  <view wx:if="{{user_per>=3}}" bindtap='send_punch_event' class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon-punch.png'></image>
+    </view>
+    <view class='option-item-title'>发起签到</view>
+    <view class='option-item-other'>
+    </view>
+  </view>
+
+  <view wx:if="{{user_per==1}}" bindtap='punch_event' class='option-item'>
+    <view class='option-item-icon'>
+      <image src='/assets/images/icon-punch.png'></image>
+    </view>
+    <view class='option-item-title'>开始签到</view>
+    <view class='option-item-other'>
+    </view>
+  </view>
+</view>
+
+<view class='bottom-line-text'>-----我也是有底线的-----</view>

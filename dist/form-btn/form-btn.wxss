@@ -1,0 +1,11 @@
+form.catchForm button.catchBtn {
+  border: none;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+form.catchForm button.catchBtn::after {
+  border: none;
+}

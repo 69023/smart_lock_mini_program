@@ -1,0 +1,5 @@
+<form class="catchForm" report-submit bindsubmit="catchSubmit" >
+    <button form-type="submit" class="catchBtn">
+        <slot ></slot >
+    </button>
+</form>

@@ -1,0 +1,24 @@
+
+.options-group {
+    margin-top: 120rpx;
+  }
+  
+  .input-group {
+    height: 100rpx;
+    line-height: 100rpx;
+    margin-left: 20rpx;
+  }
+  
+  .save-info-btn {
+    font-size: 36rpx;
+    color: #fff;
+    background: #25aae3;
+    width: 420rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    border-radius: 168rpx;
+    margin: 80rpx auto 0;
+    box-shadow: 4rpx 4rpx 10rpx #a6a5ad;
+  }
+  

@@ -1,0 +1,52 @@
+/* pages/lock/lock.wxss */
+
+.indexImage {
+  width: 100%;
+}
+
+.indexImage2 {
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+
+.indexTitle {
+  text-align: center;
+  font-size: 32rpx;
+  color: #2a2d34;
+}
+
+.indexIntroduce {
+  font-size: 28rpx;
+  color: #617891;
+  text-align: center;
+  margin-top: 28rpx;
+}
+
+.indexButton {
+  font-size: 32rpx;
+  color: #fff;
+  background: #25aae3;
+  width: 360rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 168rpx;
+  margin: 100rpx auto 0;
+}
+
+/* 悬浮个人中心 */
+
+.round-click {
+  height: 160rpx;
+  width: 160rpx;
+  /* border-radius: 50% 0 0 0; */
+  position: fixed;
+  bottom: 150rpx;
+  right: 0rpx;
+}
+
+.round-click image {
+  height: 60rpx;
+  width: 60rpx;
+}

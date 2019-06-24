@@ -1,0 +1,61 @@
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-blue'></text> 开门验证
+  </view>
+  <view class='action'>
+    <text class='icon-title text-orange'></text> 门室选择
+    <picker bindchange="picker_change" value="{{index}}" mode="selector" range="{{picker}}">
+      <view class="picker">
+        {{index?picker[index]:'-点击选择门室'}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class='bg-white padding'>
+  <view class='cu-steps'>
+    <view class='cu-item {{index>num?"":"text-blue"}}' wx:for="{{numList}}" wx:key>
+      <text class='num' data-index='{{index + 1}}'></text> {{item.name}}
+    </view>
+  </view>
+</view>
+
+<view hidden='{{!show_reason}}' class="cu-bar bg-white solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-red'></text> 请先选择门室，然后进行近场验证
+  </view>
+</view>
+
+<view hidden='{{show_reason}}'>
+  <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class='action'>
+      <text class='icon-title text-blue'></text> 开门缘由
+    </view>
+  </view>
+  <radio-group bindchange="radio_change" class="block">
+    <!-- <view class="cu-form-group margin-top">
+      <view class='title'>单选操作(radio)</view>
+      <radio checked></radio>
+    </view> -->
+    <view class="cu-form-group">
+      <view class='title'>实验</view>
+      <radio checked value='1' class='blue radio'></radio>
+    </view>
+    <view class="cu-form-group">
+      <view class='title'>上课</view>
+      <radio value='2' class='blue radio'></radio>
+    </view>
+    <view class="cu-form-group">
+      <view class='title'>其他</view>
+      <radio value='3' class='blue radio'></radio>
+    </view>
+  </radio-group>
+  <view hidden='{{is_other_reason}}' class="cu-form-group">
+    <view class='title'>内容</view>
+    <input bindinput='reason_input_event' placeholder="请简要描述你的缘由" class='radius' name='reason'></input>
+  </view>
+</view>
+
+<form hidden='{{show_reason}}' class="catchForm" report-submit bindsubmit="open_lock_event">
+  <button form-type="submit" class="indexButton">开门</button>
+</form>

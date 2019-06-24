@@ -1,0 +1,16 @@
+<!--pages/user/pages/logs/logs.wxml-->
+<view class="page">
+    <view class="table">
+        <view class="tr">
+            <view class="th">姓名</view>
+            <view class="th">门室</view>
+            <view class="th">日期</view>
+        </view>
+        <view class="tr" wx:for="{{logs}}" wx:key='*this.key'>
+            <view class="td">{{item.name}}</view>
+            <view class="td">{{item.remark}}</view>
+            <view class="td">{{item.time}}</view>
+        </view>
+    </view>
+</view>
+ 
